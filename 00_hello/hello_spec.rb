@@ -95,10 +95,8 @@
 #
 # In order to get the next test to pass, your function will need to accept an *argument*.
 #
-#     def greet(who)
-#       "Hello, #{who}!"
-#     end
-#
+
+
 require "hello"
 
 describe "the hello function" do
@@ -115,4 +113,8 @@ describe "the greet function" do
   it "says hello to someone else" do
     expect(greet("Bob")).to eq("Hello, Bob!")
   end
+
+  def greet(who)
+   "Hello, #{who}!"
+ end
 end
